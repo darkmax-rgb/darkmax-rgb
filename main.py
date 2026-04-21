@@ -915,7 +915,7 @@ async def back_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # ✅️✅️ ((STARTING YOUR FASTRACK SAVVYZ TELEGRAM ROBOTZ)) ✅️✅️
 if __name__ == "__main__":
-    application = ApplicationBuilder().token(BOT_TOKEN).build()
+    application = ApplicationBuilder().token(TELEGRAM_ROBOTZ_TOKENS).build()
     application.add_handler(CommandHandler(["start", "cmds", "menu", "help"], start_command))
     application.add_handler(CommandHandler("myidz", myidz_command))
     application.add_handler(CommandHandler("bin", bin_command))
