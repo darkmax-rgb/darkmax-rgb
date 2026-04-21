@@ -19,7 +19,6 @@ import urllib.request
 import asyncio
 import requests
 import telebot
-import telegram
 from urllib.parse import urlparse
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
