@@ -1,4 +1,1 @@
 pyTelegramBotAPI
-pip install aiohttp
-pip3 install aiohttp
-pip install -r requirements.txt
