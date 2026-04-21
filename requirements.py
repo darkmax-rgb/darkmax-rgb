@@ -9,3 +9,5 @@ pip install -r requirements.txt
 pip install python-telegram-bot==13.15
 pip install python-telegram-bot --upgrade
 pip install python-telegram-bot==20.7
+pkg install python
+pip install python
