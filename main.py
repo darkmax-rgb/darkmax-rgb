@@ -17,7 +17,6 @@ import collections
 import concurrent.futures
 import urllib.request
 import asyncio
-import aiohttp
 import httpx
 import telebot
 import telegram
