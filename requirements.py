@@ -11,3 +11,7 @@ pip install python-telegram-bot --upgrade
 pip install python-telegram-bot==20.7
 pkg install python
 pip install python
+pkg install telegram-cli
+pkg install telegram
+pip install telegram-cli
+pip install telegram
