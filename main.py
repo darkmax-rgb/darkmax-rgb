@@ -18,7 +18,6 @@ import concurrent.futures
 import urllib.request
 import asyncio
 import requests
-import httpx
 import telebot
 import telegram
 from urllib.parse import urlparse
