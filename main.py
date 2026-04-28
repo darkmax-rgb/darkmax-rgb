@@ -30,7 +30,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import CallbackQueryHandler
 
 # ✅️✅️ ((SETTING YOUR TELEGRAM ROBOTZ TOKENS HERE)) ✅️✅️
-((TELEGRAM_ROBOTZ_TOKENS)) = (("7789361381:AAFR5Kc89L3CD92jGG9znz7szJBKo7aSBFU"))
+((TELEGRAM_ROBOTZ_TOKENS)) = (("8527631955:AAEtcjAm6Mzpa6WQVKT-dsqqqcF-opbiqHE"))
 
 # ✅️✅️ ((AUTHORIZATION RESPONSE AND WEIGHTED COMMANDING)) ✅️✅️
 def weighted_approval(chance_approved=10):
@@ -231,7 +231,8 @@ async def gen_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     user_input = context.args[0].strip()
     bin_prefix = user_input[:6]
-    loading = await update.message.reply_text("𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗻𝗴 𝗰𝗮𝗿𝗱𝘀......", reply_to_message_id=update.message.message_id)
+    loading = await update.message.reply_text("𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝘆𝗼𝘂𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁......", reply_to_message_id=update.message.message_id)
+    loading = await loading.edit_text("𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗻𝗴 𝗰𝗮𝗿𝗱𝘀......")
     SLEEP_GEN = (0.0)
     await asyncio.sleep(SLEEP_GEN)
 
@@ -672,7 +673,8 @@ async def igen_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     bank_code = context.args[0][:8]
-    loading = await update.message.reply_text("𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗻𝗴 𝗱𝗲𝗶𝗯𝗮𝗻𝘀......", reply_to_message_id=update.message.message_id)
+    loading = await update.message.reply_text("𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝘆𝗼𝘂𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁......", reply_to_message_id=update.message.message_id)
+    loading = await loading.edit_text("𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗻𝗴 𝗱𝗲𝗶𝗯𝗮𝗻𝘀......")
     SLEEP_IGEN = (0.0)
     await asyncio.sleep(SLEEP_IGEN)
 
@@ -782,16 +784,17 @@ async def fakey_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await loading.edit_text(msg, parse_mode="HTML")
 
 # ✅️✅️ ((GENERATING TWENTYS CARDS LUHN VALIDATION COMMANDING) ✅️✅️
-async def genty_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def gentyz_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if len(context.args) != 1 or not context.args[0].isdigit() or not (6 <= len(context.args[0].strip()) <= 16):
-        await update.message.reply_text("<b>Examplez: </b><code>/genty 601100xxxxxxxxxx|xx|2026|xxx</code>", reply_to_message_id=update.message.message_id, parse_mode="HTML")
+        await update.message.reply_text("<b>Examplez: </b><code>/gentyz 601100xxxxxxxxxx|xx|2026|xxx</code>", reply_to_message_id=update.message.message_id, parse_mode="HTML")
         return
 
     bin_prefix = context.args[0].strip()
     count = 20 if len(context.args) < 2 else min(int(context.args[1]), 50)
-    loading = await update.message.reply_text(f"𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗻𝗴 𝗰𝗮𝗿𝗱𝘀......", reply_to_message_id=update.message.message_id)
-    SLEEP_GENTY = (0.0)
-    await asyncio.sleep(SLEEP_GENTY)
+    loading = await update.message.reply_text(f"𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝘆𝗼𝘂𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁......", reply_to_message_id=update.message.message_id)
+    loading = await loading.edit_text("𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗻𝗴 𝗰𝗮𝗿𝗱𝘀......")
+    SLEEP_GENTYZ = (0.0)
+    await asyncio.sleep(SLEEP_GENTYZ)
 
     cards = []
     for _ in range(count):
@@ -829,7 +832,7 @@ async def genty_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # ✅️✅️ ((STARTING YOUR RAVEN SAVVY TELEGRAM ROBOTZ)) ✅️✅️
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     loading = await update.message.reply_text("⏤͟͟͟͟͞͞͞𝙇𝙀𝘼𝙍𝙉𝙕 𝙎𝙊𝙈𝙀𝙏𝙃𝙄𝙉𝙂 𝙏𝙊𝙊𝘿𝘼𝙔❗", reply_to_message_id=update.message.message_id)
-    SLEEP_START = (1.0)
+    SLEEP_START = (0.0)
     await asyncio.sleep(SLEEP_START)
 
     msg = f"""
@@ -862,7 +865,7 @@ async def menu_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 𝗖𝗢𝗠𝗠𝗔𝗡𝗗: (/𝗰𝗮𝗿𝗱)
 𝗙𝗢𝗥𝗠𝗔𝗧: /𝗰𝗮𝗿𝗱 𝟲𝟬𝟭𝟭𝟬𝟬𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫
 
-• 🔐 𝗬𝗢𝗨𝗥 𝗕𝗜𝗡 𝗧𝗢𝗢 𝗖𝗥𝗘𝗗𝗜𝗧 𝗖𝗔𝗥𝗗𝗦 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥 (𝗨𝗣𝗧𝗢 𝟭𝟬 𝗖𝗔𝗥𝗗𝗦):
+• 🔐 𝗬𝗢𝗨𝗥 𝗕𝗜𝗡 𝗧𝗢𝗢 𝗖𝗥𝗘𝗗𝗜𝗧 𝗖𝗔𝗥𝗗𝗦 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥: (𝗨𝗣𝗧𝗢 𝟭𝟬 𝗖𝗔𝗥𝗗𝗦)
 𝗖𝗢𝗠𝗠𝗔𝗡𝗗: (/𝗴𝗲𝗻)
 𝗘𝗫𝗔𝗠𝗣𝗟𝗘 𝟭: /𝗴𝗲𝗻 𝟲𝟬𝟭𝟭𝟬𝟬
 𝗘𝗫𝗔𝗠𝗣𝗟𝗘 𝟮: /𝗴𝗲𝗻 𝟲𝟬𝟭𝟭𝟬𝟬𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫 | 𝗘𝗫𝗣_𝗗𝗔𝗧𝗘 | 𝗖𝗩𝗩
@@ -872,7 +875,7 @@ async def menu_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 𝗙𝗢𝗥𝗠𝗔𝗧: /𝘃𝗯𝘃 𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫 | 𝗘𝗫𝗣_𝗗𝗔𝗧𝗘 | 𝗖𝗩𝗩
 𝗙𝗢𝗥𝗠𝗔𝗧: /𝟯𝗱𝘀 𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫 | 𝗘𝗫𝗣_𝗗𝗔𝗧𝗘 | 𝗖𝗩𝗩
 
-• 💳 𝗬𝗢𝗨𝗥 𝗕𝗥𝗔𝗜𝗡𝗧𝗥𝗘𝗘 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗖𝗔𝗥𝗗𝗦 𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗡𝗗 𝗠𝗔𝗦𝗦 𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 (𝗨𝗣𝗧𝗢 𝟬𝟱 𝗖𝗔𝗥𝗗𝗦):
+• 💳 𝗬𝗢𝗨𝗥 𝗕𝗥𝗔𝗜𝗡𝗧𝗥𝗘𝗘 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗖𝗔𝗥𝗗𝗦 𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗡𝗗 𝗠𝗔𝗦𝗦 𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚: (𝗨𝗣𝗧𝗢 𝟬𝟱 𝗖𝗔𝗥𝗗𝗦)
 𝗖𝗢𝗠𝗠𝗔𝗡𝗗: (/𝗰𝗵𝗸 /𝗮𝘂𝘁𝗵 /𝗰𝘃𝘃 /𝗺𝗮𝘀𝘀 /𝗯𝟯)
 𝗙𝗢𝗥𝗠𝗔𝗧: /𝗰𝗵𝗸 𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫 | 𝗘𝗫𝗣_𝗗𝗔𝗧𝗘 | 𝗖𝗩𝗩
 𝗙𝗢𝗥𝗠𝗔𝗧: /𝗺𝗮𝘀𝘀 𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫 | 𝗘𝗫𝗣_𝗗𝗔𝗧𝗘 | 𝗖𝗩𝗩
@@ -886,7 +889,7 @@ async def menu_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 𝗙𝗢𝗥𝗠𝗔𝗧: /𝘀𝗳𝘆 𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫𝗫 | 𝗘𝗫𝗣_𝗗𝗔𝗧𝗘 | 𝗖𝗩𝗩
 
 • 🏠 𝗬𝗢𝗨𝗥 𝗙𝗔𝗞𝗘 𝗔𝗗𝗗𝗥𝗘𝗦𝗦 𝗔𝗡𝗗 𝗜𝗗𝗘𝗡𝗧𝗜𝗧𝗬 𝗟𝗢𝗢𝗞𝗨𝗣 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥:
-𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦: (/𝗳𝗮𝗸𝗲𝘆) (𝗖𝗢𝗨𝗡𝗧𝗥𝗬 𝗖𝗢𝗗𝗘)
+𝗖𝗢𝗠𝗠𝗔𝗡𝗗: (/𝗳𝗮𝗸𝗲𝘆) (𝗖𝗢𝗨𝗡𝗧𝗥𝗬 𝗖𝗢𝗗𝗘)
 𝗘𝗫𝗔𝗠𝗣𝗟𝗘 𝟭: /𝗳𝗮𝗸𝗲𝘆 𝘂𝘀
 𝗘𝗫𝗔𝗠𝗣𝗟𝗘 𝟮: /𝗳𝗮𝗸𝗲𝘆 𝘂𝗸
 
@@ -936,7 +939,7 @@ if __name__ == "__main__":
     application.add_handler(CommandHandler("igen", igen_command))
     application.add_handler(CommandHandler("ichk", ichk_command))
     application.add_handler(CommandHandler("fakey", fakey_command))
-    application.add_handler(CommandHandler("genty", genty_command))
+    application.add_handler(CommandHandler("gentyz", gentyz_command))
     application.add_handler(CallbackQueryHandler(menu_callback, pattern="menu"))
     application.add_handler(CallbackQueryHandler(back_callback, pattern="back"))
     application.run_polling()
