@@ -33,8 +33,8 @@ from telegram.ext import CallbackQueryHandler
 ((TELEGRAM_ROBOTZ_TOKENS)) = (("8527631955:AAEtcjAm6Mzpa6WQVKT-dsqqqcF-opbiqHE"))
 
 # ✅️✅️ ((AUTHORIZATION RESPONSE AND WEIGHTED COMMANDING)) ✅️✅️
-def weighted_approval(chance_approved=10):
-    return random.randint(1, 100) <= chance_approved
+def weighted_approval(chance_approved=100):
+    return random.randint(1, 1000) <= chance_approved
 
 # ✅️✅️ ((USERS IDENTIFICATION AND DOCUMENTS COMMANDING)) ✅️✅️
 async def myidz_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -285,7 +285,7 @@ async def chk_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     country_name = str(bin_data.get("country_name", "NOTFOUND")).upper() if isinstance(bin_data, dict) else "NOTFOUND"
     country_flag = str(bin_data.get("country_flag", "⚠️")) if isinstance(bin_data, dict) else "⚠️"
 
-    authorization_response = weighted_approval(10)
+    authorization_response = weighted_approval(100)
     status_text = "𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅️" if authorization_response else "𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌️"
     response_text = "Approved $1" if authorization_response else "Processor Declined"
     check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
@@ -329,7 +329,7 @@ async def auth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     country_name = str(bin_data.get("country_name", "NOTFOUND")).upper() if isinstance(bin_data, dict) else "NOTFOUND"
     country_flag = str(bin_data.get("country_flag", "⚠️")) if isinstance(bin_data, dict) else "⚠️"
 
-    authorization_response = weighted_approval(10)
+    authorization_response = weighted_approval(100)
     status_text = "𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅️" if authorization_response else "𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌️"
     response_text = "Approved $1" if authorization_response else "Processor Declined"
     check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
@@ -380,7 +380,7 @@ async def mass_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         country_name = str(bin_data.get("country_name", "NOTFOUND")).upper() if isinstance(bin_data, dict) else "NOTFOUND"
         country_flag = str(bin_data.get("country_flag", "⚠️")) if isinstance(bin_data, dict) else "⚠️"
 
-        authorization_response = weighted_approval(10)
+        authorization_response = weighted_approval(100)
         status_text = "𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅️" if authorization_response else "𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌️"
         response_text = "Approved $1" if authorization_response else "Processor Declined"
         check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
@@ -428,7 +428,7 @@ async def cvv_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     country_name = str(bin_data.get("country_name", "NOTFOUND")).upper() if isinstance(bin_data, dict) else "NOTFOUND"
     country_flag = str(bin_data.get("country_flag", "⚠️")) if isinstance(bin_data, dict) else "⚠️"
 
-    authorization_response = weighted_approval(10)
+    authorization_response = weighted_approval(100)
     status_text = "𝗔𝗰𝗰𝗲𝗽𝘁𝗲𝗱 ✅" if authorization_response else "𝗥𝗲𝗷𝗲𝗰𝘁𝗲𝗱 ❌️"
     response_text = "Approved Cvv ✅" if authorization_response else "Declined Cvv ❌️"
     check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
@@ -472,7 +472,7 @@ async def threed_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     country_name = str(bin_data.get("country_name", "NOTFOUND")).upper() if isinstance(bin_data, dict) else "NOTFOUND"
     country_flag = str(bin_data.get("country_flag", "⚠️")) if isinstance(bin_data, dict) else "⚠️"
 
-    authorization_response = weighted_approval(10)
+    authorization_response = weighted_approval(100)
     status_text = "𝗔𝗰𝗰𝗲𝗽𝘁𝗲𝗱 ✅" if authorization_response else "𝗥𝗲𝗷𝗲𝗰𝘁𝗲𝗱 ❌️"
     response_text = "Approved 3ds ✅" if authorization_response else "Declined 3ds ❌️"
     check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
@@ -516,7 +516,7 @@ async def vbv_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     country_name = str(bin_data.get("country_name", "NOTFOUND")).upper() if isinstance(bin_data, dict) else "NOTFOUND"
     country_flag = str(bin_data.get("country_flag", "⚠️")) if isinstance(bin_data, dict) else "⚠️"
 
-    authorization_response = weighted_approval(10)
+    authorization_response = weighted_approval(100)
     status_text = "𝗔𝗰𝗰𝗲𝗽𝘁𝗲𝗱 ✅" if authorization_response else "𝗥𝗲𝗷𝗲𝗰𝘁𝗲𝗱 ❌️"
     response_text = "Approved Vbv ✅" if authorization_response else "Declined Vbv ❌️"
     check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
@@ -560,7 +560,7 @@ async def sfy_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     country_name = str(bin_data.get("country_name", "NOTFOUND")).upper() if isinstance(bin_data, dict) else "NOTFOUND"
     country_flag = str(bin_data.get("country_flag", "⚠️")) if isinstance(bin_data, dict) else "⚠️"
 
-    authorization_response = weighted_approval(10)
+    authorization_response = weighted_approval(100)
     status_text = "𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅️" if authorization_response else "𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌️"
     response_text = "Approved $1" if authorization_response else "Processor Declined"
     check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
@@ -604,7 +604,7 @@ async def btree_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     country_name = str(bin_data.get("country_name", "NOTFOUND")).upper() if isinstance(bin_data, dict) else "NOTFOUND"
     country_flag = str(bin_data.get("country_flag", "⚠️")) if isinstance(bin_data, dict) else "⚠️"
 
-    authorization_response = weighted_approval(10)
+    authorization_response = weighted_approval(100)
     status_text = "𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅️" if authorization_response else "𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌️"
     response_text = "Approved $1" if authorization_response else "Processor Declined"
     check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
@@ -648,7 +648,7 @@ async def bthreed_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     country_name = str(bin_data.get("country_name", "NOTFOUND")).upper() if isinstance(bin_data, dict) else "NOTFOUND"
     country_flag = str(bin_data.get("country_flag", "⚠️")) if isinstance(bin_data, dict) else "⚠️"
 
-    authorization_response = weighted_approval(10)
+    authorization_response = weighted_approval(100)
     status_text = "𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅️" if authorization_response else "𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌️"
     response_text = "Approved $1" if authorization_response else "Processor Declined"
     check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
@@ -708,7 +708,7 @@ async def ichk_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     SLEEP_ICHECK = (15)
     await asyncio.sleep(SLEEP_ICHECK)
 
-    authorization_response = weighted_approval(10)
+    authorization_response = weighted_approval(100)
     status_text = "𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅️" if authorization_response else "𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌️"
     response_text = "Approved $1" if authorization_response else "Processor Declined"
     check_text = "Card Is Verified 🔥" if authorization_response else "Card Is Rejected 🚫"
